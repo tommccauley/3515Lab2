@@ -36,6 +36,16 @@ public class FormActivity extends AppCompatActivity {
                     Toast empty = Toast.makeText(FormActivity.this, "Please fill out every field.", Toast.LENGTH_SHORT);
                     empty.show();
                 }
+                //checks if password and confirm password are the same
+                else if(!(strpassword.equals(strconfirm))){
+                    Toast p = Toast.makeText(FormActivity.this, "Password and Confirmation do not match.", Toast.LENGTH_SHORT);
+                    p.show();
+                }
+                else{
+                    Toast s = Toast.makeText(FormActivity.this, "Welcome "+ strname + "!", Toast.LENGTH_SHORT);
+                    s.show();
+                }
+
 
 
             }
